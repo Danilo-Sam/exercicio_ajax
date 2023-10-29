@@ -45,7 +45,6 @@
             fetch(endpoint)
                 .then(function(endpoint) {
                     return endpoint.json();
-                    console.log(endpoint);
                 })
                 .then(function(json) {
                     nameElement.innerText = json.name;
@@ -55,7 +54,6 @@
                     followersElement.innerText = json.followers;
                     reposElement.innerText = json.public_repos;
                     linkElement.href = json.html_url;
-                    console.log(json);
                 })
         })
     </script>
